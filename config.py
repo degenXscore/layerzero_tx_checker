@@ -42,38 +42,29 @@ with open(f"{outfile}data/gnosis_api.txt", "r") as f:
     GNOSIS_API_KEYS = [row.strip() for row in f]
 
 api_keys = {
-    'arbitrum'  : ARB_API_KEYS,
-    'optimism'  : OPT_API_KEYS,
     'avalanche' : AVAX_API_KEYS,
     'bsc'       : BSC_API_KEYS,
     'polygon'   : POLYGON_API_KEYS,
     'fantom'    : FTM_API_KEYS,
-    'ethereum'  : ETH_API_KEYS,
     'celo'      : CELO_API_KEYS,
     'gnosis'    : GNOSIS_API_KEYS,
 }
 
 # api urls
 base_url = {
-    'arbitrum'  : 'https://api.arbiscan.io',
-    'optimism'  : 'https://api-optimistic.etherscan.io',
     'avalanche' : 'https://api.snowtrace.io',
     'bsc'       : 'https://api.bscscan.com',
     'polygon'   : 'https://api.polygonscan.com',
     'fantom'    : 'https://api.ftmscan.com',
-    'ethereum'  : 'https://api.etherscan.io',
     'celo'      : 'https://api.celoscan.io',
     'gnosis'    : 'https://api.gnosisscan.io',
 }
 
 native_tokens = {
-    'arbitrum'  : 'ETH',
-    'optimism'  : 'ETH',
     'avalanche' : 'AVAX',
     'bsc'       : 'BNB',
     'polygon'   : 'MATIC',
     'fantom'    : 'FTM',
-    'ethereum'  : 'ETH',
 }
 
 
